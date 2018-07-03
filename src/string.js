@@ -6,7 +6,7 @@ import includeIoMixin from './io-mixin';
 
 export class String {
   constructor(maxLength=UnsignedInt.MAX_VALUE) {
-    this._maxLength = 8192;
+    this._maxLength = maxLength;
   }
 
   read(io) {
